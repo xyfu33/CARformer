@@ -1,0 +1,29 @@
+PYTHONWARNINGS=ignore python3 -u train_cls.py --max_epochs 200 --eval_interval 1 \
+--batch_size 2 \
+--accum_steps 8 \
+--patch_shape 96 \
+--in_channels 1 \
+--num_classes 3 \
+--lr 3e-4 \
+--wd 0.0001 \
+--random_seed 42 \
+--workers 6 \
+--devices 1 \
+--data_root '../data' \
+--dataset 'CARformer_demo' \
+--json_file 'example_dataset.json' \
+--output_dir '../runs' \
+--experiment 'CARformer_demo' \
+--pretrained '../pretrained/BrainMVP_uniformer.pt' \
+--mix_template \
+--template_dir 'templates' \
+--use_cl \
+--use_supcon \
+--use_boq \
+--cac_use \
+--supcon_lambda 0.05 \
+--supcon_temp 0.07 \
+--supcon_proj_dim 128 \
+--supcon_queue_size 160 \
+--save_top_k 3 \
+--loss balanced_softmax 

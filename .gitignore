@@ -1,0 +1,37 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Legacy pretraining scaffold is not part of this public downstream release.
+/main.py
+/models/
+/downstream/inference_util.py
+
+# Local data and generated medical-image artifacts
+/data/
+*.nii
+*.nii.gz
+*.mgz
+*.nrrd
+
+# Pretrained weights, trained checkpoints, and generated outputs
+/pretrained/
+/runs/
+/outputs/
+/templates/
+/downstream/templates/
+*.pt
+*.pth
+*.pth.tar
+*.ckpt
+
+# Private dataset splits should not be committed.
+/downstream/*balanced*.json
+/downstream/*Split*.json
+/downstream/*split*.json
+!/downstream/example_dataset.json
+
+# Local logs and prediction dumps
+*.jsonl
+*.csv
+*.log

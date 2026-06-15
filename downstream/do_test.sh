@@ -1,0 +1,13 @@
+PYTHONWARNINGS=ignore python3 test_cls.py \
+--devices 1 \
+--batch_size 32 \
+--in_channels 1 \
+--num_classes 3 \
+--patch_shape 96 \
+--data_root '../data' \
+--json_file 'example_dataset.json' \
+--checkpoint '../runs/CARformer_demo/model_top3_val_auc_epoch000_auc0.000000.pth.tar' \
+--loss balanced_softmax \
+--use_boq \
+--dump_json '../runs/CARformer_demo/test_metrics.json' \
+--log_out_csv '../runs/CARformer_demo/test_predictions.csv'

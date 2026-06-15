@@ -1,0 +1,11 @@
+# Core runtime for CARformer downstream classification.
+# Install a CUDA build of PyTorch that matches your system if this pinned wheel is not suitable.
+torch==2.6.0
+torchvision==0.21.0
+monai==1.4.0
+nibabel==5.2.1
+numpy==1.26.4
+scipy==1.13.1
+scikit-learn==1.6.1
+timm==1.0.15
+PyYAML==6.0.1

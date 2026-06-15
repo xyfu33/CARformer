@@ -1,0 +1,44 @@
+{
+  "training": [
+    {
+      "image": ["site_a/control_001/T1.nii.gz"],
+      "label": 0
+    },
+    {
+      "image": ["site_a/class1_001/T1.nii.gz"],
+      "label": 1
+    },
+    {
+      "image": ["site_a/class2_001/T1.nii.gz"],
+      "label": 2
+    }
+  ],
+  "validation": [
+    {
+      "image": ["site_b/control_002/T1.nii.gz"],
+      "label": 0
+    },
+    {
+      "image": ["site_b/class1_002/T1.nii.gz"],
+      "label": 1
+    },
+    {
+      "image": ["site_b/class2_002/T1.nii.gz"],
+      "label": 2
+    }
+  ],
+  "test": [
+    {
+      "image": ["site_c/control_003/T1.nii.gz"],
+      "label": 0
+    },
+    {
+      "image": ["site_c/class1_003/T1.nii.gz"],
+      "label": 1
+    },
+    {
+      "image": ["site_c/class2_003/T1.nii.gz"],
+      "label": 2
+    }
+  ]
+}
